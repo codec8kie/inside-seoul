@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{box-sizing:border-box; padding:0; margin:0;}
+body{font-family:'맑은 고딕'; font-size:0.88em; color:#333;}
+fieldset{border:0}
+legend{display:none}
+a{text-decoration:none; color:#666}
+a:hover{text-decoration:none; color:#999}
+
+
+/*Screen*/
+.screen{width:100%; height:100%; position:absolute}
+
+	/*Bar*/
+	.bar{width:100%; line-height:50px; background:#000; position:fixed; z-index:400}
+		.bar-inner{max-width:1700px; margin:0 auto;}
+		.bar-inner a img{vertical-align:middle;}
+		.bar-inner .left-btn{width:20%; float:left; text-align:left; padding-left:20px;}
+		.bar-inner .center-title{width:60%; float:left; font-size:1.25em; color:#fff; font-weight:bold; text-align:center}
+		.bar-inner .right-btn{width:20%; float:left; text-align:right; padding-right:20px;}
+	.wrap{width:1200px; height:100%; margin:0 auto; position:relative; padding-top:70px; background:none}
+
+
+/*SVG*/
+path { transition: all .3s; cursor: pointer; }
+path:hover { fill: #7f7f7f; /*stroke: #ccc; stroke-width: 3;*/ }
+
+
+/*USER-DEFINE*/
+.page-wrapper { width: 100%; float: left; padding-bottom: 20px; margin-bottom: 20px; border-bottom: solid 1px #ddd; }
+.first-div { width: 20%; float: left; height: 200px; padding-right: 20px; }
+	.first-div img { width: 100%; height: 100%; }
+.second-div { width: 80%; float: left; padding-left: 20px; }
+	.second-div h1, .second-div table { margin-bottom: 10px; }
+
+/*ADMIN*/
+.admin-wrapper { width: 100%; float: left; }
+.admin-wrapper > div.box { width: 100%; text-align: center; padding-bottom: 5px; }
+input, button { padding: 9px 12px; width: 50%; border: none; border-radius: 5px; }
+input { border: solid 1px #ddd; }
+button { color: white; background-color: #222; }
+
+label { width: 100%; float: left; margin-bottom: 20px; }
+#drop { width: 100%; float: left; min-height: 500px; background-color: #eee; border-radius: 5px; padding: 9px 12px; text-align: center; line-height: 500px; transition: all .3s; }
+
+.list-wrapper { width: 100%; float: left; }
+.list-wrapper > div { width: 25%; height: 200px; float: left; overflow: hidden; padding: 20px 10px; position: relative; }
+.list-wrapper > div > img.play_btn { position: absolute; width: 50px; height: 50px; left: 50%; top: 50%; margin-left: -25px; margin-top: -25px; }
+
+#dialog { overflow: hidden; }
+#dialog img, #dialog video { width: 100%; height: 100%; }
